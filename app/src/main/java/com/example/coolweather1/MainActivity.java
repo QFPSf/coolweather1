@@ -13,6 +13,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        SharedPreferences pref=PreferenceManager.getDefaultSharedPreferences(this);
+        String weather=pref.getString("weather",null);
+        if (weather!=null){
+            Intent intent=new Intent(this,WeatherActivity.class);
+            startActivity(intent);
+        }
     }
 }
