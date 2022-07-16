@@ -4,7 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/CoolWeather1/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/CoolWeather1/app/src/main/res/layout/activity_weather.xml" value="0.25364583333333335" />
+        <entry key="..\:/CoolWeather1/app/src/main/res/layout/aqi.xml" value="0.2390625" />
         <entry key="..\:/CoolWeather1/app/src/main/res/layout/choose_area.xml" value="0.25364583333333335" />
+        <entry key="..\:/CoolWeather1/app/src/main/res/layout/foecast.xml" value="0.2390625" />
+        <entry key="..\:/CoolWeather1/app/src/main/res/layout/foecast_item.xml" value="0.2390625" />
+        <entry key="..\:/CoolWeather1/app/src/main/res/layout/now.xml" value="0.2390625" />
+        <entry key="..\:/CoolWeather1/app/src/main/res/layout/suggestion.xml" value="0.2390625" />
+        <entry key="..\:/CoolWeather1/app/src/main/res/layout/title.xml" value="0.2390625" />
         <entry key="..\:/CoolWeather1/app/src/main/res/xml/net_work.xml" value="0.25364583333333335" />
       </map>
     </option>
