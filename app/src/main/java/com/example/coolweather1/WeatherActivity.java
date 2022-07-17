@@ -8,6 +8,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
@@ -29,6 +30,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.coolweather1.gson.Forcast;
 import com.example.coolweather1.gson.Weather;
+import com.example.coolweather1.service.AutoUpdateService;
 import com.example.coolweather1.util.HttpUtil;
 import com.example.coolweather1.util.Utility;
 
@@ -81,6 +83,8 @@ public class WeatherActivity extends AppCompatActivity {
         String weatherString = prefs.getString("weather", null);
         if (weatherString != null) {
             Weather weather = Utility.handleWeatherResponse(weatherString);
+            Intent intent=new Intent(this, AutoUpdateService.class);
+            startService(intent);
             showWeatherInfo(weather);
         } else {
             String weatherId = getIntent().getStringExtra("weather_id");
@@ -185,6 +189,7 @@ public class WeatherActivity extends AppCompatActivity {
         carwashText.setText(carWash);
         sportText.setText(sport);
         weatherLayout.setVisibility(View.VISIBLE);
+
         closeProgressDialog();
     }
 

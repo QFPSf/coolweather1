@@ -4,3 +4,6 @@
 3.Unable to start activity ComponentInfo:可能在寻找视图时匹配错了不属于这个活动的布局的视图的名字。
 4.用ImageButton可以使按钮图标更加明显。
 5.----------------------------------------------------------
+6.PendingIntent可以理解为Intent的封装包，简单的说就是在Intent上在加个指定的动作。在使用Intent的时候，我们还需要
+在执行startActivity、startService或sendBroadcast才能使Intent有用。而PendingIntent的话就是将这个动作包含在内
+了。
